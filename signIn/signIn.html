@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <title>별별주차장 회원가입</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="./css/signin.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <div class="wrapper">
+      <form class="form-signin" action="signIn.php" method="POST">
+        <img class="mb-4" src="./logo.svg" alt="" width="200" height="200" />
+        <h1 class="h3 mb-3 font-weight-bold">별별주차장</h1>
+        <br />
+        <label for="inputText" class="sr-only">ID</label>
+        <input
+          type="text"
+          id="inputText"
+          name="id"
+          class="form-control"
+          placeholder="ID"
+          required
+          autofocus
+        />
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input
+          type="password"
+          id="inputPassword"
+          name="pw"
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <button
+          class="btn btn-lg btn-primary btn-block"
+          type="submit"
+          value="login"
+        >
+          로그인
+        </button>
+      </form>
+      <button class="btn btn-lg btn-primary btn-block">회원가입</button>
+    </div>
+  </body>
+</html>
