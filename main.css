@@ -304,7 +304,7 @@ footer hr {
   height: 100%;
 }
 .submit {
-  display: none;
+  display: flex;
   margin: 0 auto;
   width: auto;
   font-size: 16px;
