@@ -163,12 +163,10 @@ function initMap() {
 							</p>
 							<br>
 							<br>
-							<div class="btn">
-								<span class="icon-checkmark"></span>
-							</div>
 						</div>
 						<div class="grid_8 omega">
 							<div class="grid_6 omega" id="scroll2">
+							
 							</div>
 						</div>
 					</div>
@@ -204,9 +202,9 @@ function initMap() {
 					</div>
 					<div class="content grid_12 contactmap dn" id="contact-phone">
 						<div class="grid_4">
-							<h2>TELEPHONE</h2>
+							<h2>회원가입</h2>
 							<p class="information">
-								<span class="icon-location"> ADRESS: </span>Maecenas faucibus mollis interdum.
+								<span class="icon-location"> 별별주차장</span>의 회원이 되어보세요!
 							</p>
 						</div>
 						<div class="grid_8 omega">
