@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 <link href="./main.css" rel="stylesheet"/>
 <script src="./main.js" type="text/javascript"></script>
+
 </head>
 <body>
 <!---상단 navigation--->
@@ -69,8 +70,21 @@
 					</div>
 				</div>
 				<div class="grid_8 omega">
-					<div id="map_canvas">
-					</div>
+					<div id="map" style="width:100%; height:100%;"></div>
+                    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+    var uluru = {lat: 37.566459 , lng:126.948388};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 15, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+                    </script>
+                  
+
 				</div>
 			</div>
 			<!---리뷰등록--->
@@ -155,7 +169,6 @@
 						</div>
 						<div class="grid_8 omega">
 							<div class="grid_6 omega" id="scroll2">
-								 Sed posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.
 							</div>
 						</div>
 					</div>
@@ -268,6 +281,5 @@
 				<div class="clear">
 				</div>
 			</div>
-		</div>
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		</div><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUDH4nV0fOKBbRG_fQ3pnM7Hx6WQeaa6Q&callback=initMap"></script>
 		</body>
