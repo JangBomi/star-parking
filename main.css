@@ -74,7 +74,7 @@ a:visited {
 .grid_9,
 .grid_10,
 .grid_11 {
-  margin: 0 2% 1% 0;
+  margin: 1% 2% 1% 0;
   float: left;
   display: block;
 }
@@ -211,7 +211,7 @@ a:visited {
 }
 #contact-bus .grid_6.omega,
 #contact-car .grid_6.omega {
-  width: auto;
+  width: 100%;
   max-width: 100%;
   margin: auto;
   align-items: center;
@@ -442,9 +442,10 @@ footer hr {
   left: 2px;
 }
 #main_section {
-  float: left;
-  width: fit-content;
-  margin: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 5rem 0rem 5rem;
 }
 
 .col-lg-1,
@@ -757,8 +758,8 @@ textarea {
 select,
 input:not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
   margin-bottom: 20px;
+  width: auto;
   display: block;
-  width: 100%;
   padding: 10px;
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -792,25 +793,27 @@ textarea {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
-<!---login_form--- > .wrapper {
+.wrapper {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
-  width: 28rem;
-  max-width: 330px;
+  width: 100%;
+  height: 100%;
   margin: auto;
-  padding: 0 1.5rem;
 }
 
 .form-signin {
   width: 100%;
-  max-width: 330px;
   margin-bottom: 1rem;
   margin: auto;
   height: 100%;
   overflow-y: scroll;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 5rem 1rem 5rem;
 }
 .form-signin .form-control {
   position: relative;
@@ -818,6 +821,7 @@ textarea {
   height: 3.5rem;
   padding: 1rem;
   font-size: 1.5rem;
+  width: 20rem;
 }
 .form-signin .form-control:focus {
   z-index: 2;
